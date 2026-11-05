@@ -57,19 +57,26 @@ public class Tablero {
     }
 
     public static void mostrarTableros(char[][] misBarcos, char[][] misDisparos, String nombreJugador) {
-        System.out.println("\n  " + Constantes.BOLD + Constantes.WHITE + "TU TABLERO (" + nombreJugador + ")" + Constantes.RESET + "                " + Constantes.BOLD + Constantes.WHITE + "TABLERO DE DISPAROS" + Constantes.RESET);
+        String tituloIzquierdo = "TU TABLERO (" + nombreJugador + ")";
         
+        // Títulos de ambos tableros alineados
+        System.out.println("\n  " + Constantes.BOLD + Constantes.WHITE + String.format("%-20s", tituloIzquierdo) + Constantes.RESET 
+                           + "      " 
+                           + Constantes.BOLD + Constantes.WHITE + "TABLERO DE DISPAROS" + Constantes.RESET);
+        
+        // Números de columna (1 al 8) alineados con las celdas
         System.out.print("  ");
         for (int j = 1; j <= Constantes.COLUMNAS; j++) System.out.print(Constantes.CYAN + j + " " + Constantes.RESET);
-        System.out.print("         ");
+        System.out.print("        "); // 8 espacios de separación exactos
         System.out.print("  ");
         for (int j = 1; j <= Constantes.COLUMNAS; j++) System.out.print(Constantes.CYAN + j + " " + Constantes.RESET);
         System.out.println();
 
+        // Filas de ambos tableros
         for (int i = 0; i < Constantes.FILAS; i++) {
             char letraFila = (char) ('A' + i);
             
-            // Tablero propio
+            // --- Tablero propio ---
             System.out.print(Constantes.CYAN + letraFila + " " + Constantes.RESET);
             for (int j = 0; j < Constantes.COLUMNAS; j++) {
                 char cell = misBarcos[i][j];
@@ -79,9 +86,10 @@ public class Tablero {
                 else System.out.print(cell + " ");
             }
 
-            System.out.print("     ");
+            // Separación uniforme entre tableros (8 espacios)
+            System.out.print("        ");
 
-            // Tablero de disparos
+            // --- Tablero de disparos ---
             System.out.print(Constantes.CYAN + letraFila + " " + Constantes.RESET);
             for (int j = 0; j < Constantes.COLUMNAS; j++) {
                 char cell = misDisparos[i][j];
