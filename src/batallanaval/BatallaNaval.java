@@ -31,14 +31,14 @@ public class BatallaNaval {
     // --- PORTADA Y MENÚ ---
     public static void mostrarPortada() {
         System.out.println(Constantes.CYAN + Constantes.BOLD + "========================================================================");
-        System.out.println(" ██████╗  █████╗ ████████╗ █████╗ ██╗     ██╗      █████╗ ");
+        System.out.println(" ██████╗  █████╗ ████████╗ █████╗ ██╗     ██║     █████╗ ");
         System.out.println(" ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║     ██║     ██╔══██╗");
         System.out.println(" ██████╔╝███████║   ██║   ███████║██║     ██║     ███████║");
         System.out.println(" ██╔══██╗██╔══██║   ██║   ██╔══██║██║     ██║     ██╔══██║");
         System.out.println(" ██████╔╝██║  ██║   ██║   ██║  ██║███████╗███████╗██║  ██║");
         System.out.println(" ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝" + Constantes.RESET);
         
-        System.out.println(Constantes.PURPLE + Constantes.BOLD + " ███╗   ██╗ █████╗ ██╗   ██╗ █████╗ ██╗     ");
+        System.out.println(Constantes.GREEN + Constantes.BOLD + " ███╗   ██╗ █████╗ ██╗   ██╗ █████╗ ██╗     ");
         System.out.println(" ████╗  ██║██╔══██╗██║   ██║██╔══██╗██║     ");
         System.out.println(" ██╔██╗ ██║███████║██║   ██║███████║██║     ");
         System.out.println(" ██║╚██╗██║██╔══██║╚██╗ ██╔╝██╔══██║██║     ");
@@ -50,7 +50,7 @@ public class BatallaNaval {
     }
 
     public static void mostrarMenu() {
-        System.out.println(Constantes.PURPLE + Constantes.BOLD + "\n╔══════════════════════════════════════════════════════════╗");
+        System.out.println(Constantes.GREEN + Constantes.BOLD + "\n╔══════════════════════════════════════════════════════════╗");
         System.out.println("║                    MENÚ DE OPERACIONES                   ║");
         System.out.println("╠══════════════════════════════════════════════════════════╣");
         System.out.println("║  1. 📖 Tutorial de cómo jugar                            ║");
